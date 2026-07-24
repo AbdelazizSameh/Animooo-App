@@ -1,0 +1,56 @@
+import 'package:animoooa_app/core/constants/app_colors.dart';
+import 'package:animoooa_app/core/constants/app_styles.dart';
+import 'package:flutter/material.dart';
+import '../../../../../core/widgets/custom_elevated_button.dart';
+import 'auth_footer_widget.dart';
+import 'custom_text_form_field.dart';
+
+class LoginViewForm extends StatelessWidget {
+  const LoginViewForm({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Form(
+      child: Column(
+        children: [
+          const CustomTextFormField(
+            label: 'Email',
+            hintText: 'Enter your email address',
+          ),
+          const SizedBox(height: 16),
+          CustomTextFormField(
+            label: 'Password',
+            hintText: '********',
+            suffixIcon: IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.visibility_outlined,
+                color: AppColors.grey700,
+              ),
+            ),
+          ),
+          Align(
+            alignment: AlignmentGeometry.centerEnd,
+            child: TextButton(
+              onPressed: () {},
+              child: Text(
+                'Forget Password....?',
+                style: AppStyles.poppins12.copyWith(
+                  color: AppColors.primary,
+                  decoration: .underline,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 16),
+          const CustomElevatedButton(text: 'Log In'),
+          const SizedBox(height: 195),
+          const AuthFooterWidget(
+            text1: "Don't have an account? ",
+            text2: "Sign up now",
+          ),
+        ],
+      ),
+    );
+  }
+}

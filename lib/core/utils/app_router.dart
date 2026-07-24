@@ -1,5 +1,4 @@
 import 'package:go_router/go_router.dart';
-
 import '../../features/auth/presentation/views/login_view.dart';
 import '../constants/app_routes.dart';
 
