@@ -8,12 +8,13 @@ class AnimoooApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Animooo App',
       theme: ThemeData(
         fontFamily: FontFamily.poppins,
         scaffoldBackgroundColor: AppColors.white,
       ),
-      // home: ,
+      home: Scaffold(body: SizedBox()),
     );
   }
 }
