@@ -1,13 +1,13 @@
-import 'package:animoooa_app/core/constants/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../../../../../core/constants/app_assets.dart';
 import '../../../../../core/constants/app_routes.dart';
+import '../../../../../core/constants/app_styles.dart';
 import 'auth_footer_widget.dart';
-import 'login_view_form.dart';
+import 'signup_view_form.dart';
 
-class LoginViewBody extends StatelessWidget {
-  const LoginViewBody({super.key});
+class SignupViewBody extends StatelessWidget {
+  const SignupViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,14 +18,14 @@ class LoginViewBody extends StatelessWidget {
           children: [
             Image.asset(AppAssets.logo, width: 72),
             const SizedBox(height: 40),
-            const Text("Log In", style: AppStyles.otamaep38),
+            const Text("Sign Up", style: AppStyles.otamaep38),
             const SizedBox(height: 40),
-            const LoginViewForm(),
+            const SignupViewForm(),
             const SizedBox(height: 195),
             AuthFooterWidget(
-              text1: "Don't have an account? ",
-              text2: "Sign up now",
-              onTap: () => GoRouter.of(context).push(AppRoutes.signupRoute),
+              text1: "Have an account already?",
+              text2: "  Log in",
+              onTap: () => GoRouter.of(context).pop(AppRoutes.loginRoute),
             ),
           ],
         ),

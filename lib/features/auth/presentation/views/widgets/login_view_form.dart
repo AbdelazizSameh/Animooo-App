@@ -2,7 +2,6 @@ import 'package:animoooa_app/core/constants/app_colors.dart';
 import 'package:animoooa_app/core/constants/app_styles.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/widgets/custom_elevated_button.dart';
-import 'auth_footer_widget.dart';
 import 'custom_text_form_field.dart';
 
 class LoginViewForm extends StatelessWidget {
@@ -44,11 +43,6 @@ class LoginViewForm extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           const CustomElevatedButton(text: 'Log In'),
-          const SizedBox(height: 195),
-          const AuthFooterWidget(
-            text1: "Don't have an account? ",
-            text2: "Sign up now",
-          ),
         ],
       ),
     );
