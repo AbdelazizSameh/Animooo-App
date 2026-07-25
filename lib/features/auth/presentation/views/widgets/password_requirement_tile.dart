@@ -21,8 +21,8 @@ class PasswordRequirementTile extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
         children: [
-          Icon(Icons.circle, size: 10, color: color),
-          const SizedBox(width: 8),
+          Icon(Icons.circle, size: 5, color: color),
+          const SizedBox(width: 5),
           Text(
             text,
             style: AppStyles.poppins9.copyWith(

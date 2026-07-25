@@ -22,10 +22,7 @@ class PasswordValidator extends StatelessWidget {
       children: [
         Text(
           'Please add all necessary characters to create safe password.',
-          style: AppStyles.poppins10.copyWith(
-            fontWeight: .w600,
-            color: AppColors.red,
-          ),
+          style: AppStyles.poppins10.copyWith(color: AppColors.red),
         ),
         const SizedBox(height: 11),
         PasswordRequirementTile(

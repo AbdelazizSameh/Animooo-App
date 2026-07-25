@@ -1,4 +1,6 @@
+import 'package:animoooa_app/core/constants/app_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/app_styles.dart';
 import '../../../../../core/widgets/custom_elevated_button.dart';
@@ -26,7 +28,11 @@ class OtpVerificationViewBody extends StatelessWidget {
           const SizedBox(height: 54),
           const CustomPinPutWidget(),
           const SizedBox(height: 41),
-          CustomElevatedButton(text: "Confirm", onPressed: () {}),
+          CustomElevatedButton(
+            text: "Confirm",
+            onPressed: () =>
+                GoRouter.of(context).push(AppRoutes.createNewPasswordRoute),
+          ),
           const SizedBox(height: 6),
           Align(
             alignment: Alignment.center,
