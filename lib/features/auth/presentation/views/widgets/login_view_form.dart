@@ -1,6 +1,8 @@
 import 'package:animoooa_app/core/constants/app_colors.dart';
+import 'package:animoooa_app/core/constants/app_routes.dart';
 import 'package:animoooa_app/core/constants/app_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import '../../../../../core/widgets/custom_elevated_button.dart';
 import 'custom_text_form_field.dart';
 
@@ -31,7 +33,8 @@ class LoginViewForm extends StatelessWidget {
           Align(
             alignment: AlignmentGeometry.centerEnd,
             child: TextButton(
-              onPressed: () {},
+              onPressed: () =>
+                  GoRouter.of(context).push(AppRoutes.forgetPasswordRoute),
               child: Text(
                 'Forget Password....?',
                 style: AppStyles.poppins12.copyWith(

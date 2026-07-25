@@ -13,6 +13,7 @@ class AnimoooApp extends StatelessWidget {
       title: 'Animooo App',
       theme: ThemeData(
         fontFamily: FontFamily.poppins,
+        appBarTheme: AppBarThemeData(backgroundColor: AppColors.white),
         scaffoldBackgroundColor: AppColors.white,
       ),
       routerConfig: AppRouter.routerConfig,
