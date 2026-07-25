@@ -45,7 +45,7 @@ class LoginViewForm extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
-          const CustomElevatedButton(text: 'Log In'),
+          CustomElevatedButton(text: 'Log In', onPressed: () {}),
         ],
       ),
     );

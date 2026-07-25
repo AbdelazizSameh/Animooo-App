@@ -61,7 +61,7 @@ class SignupViewForm extends StatelessWidget {
           const SizedBox(height: 16),
           const ImagePickWidget(),
           const SizedBox(height: 16),
-          const CustomElevatedButton(text: 'Sign Up'),
+          CustomElevatedButton(text: 'Sign Up', onPressed: () {}),
         ],
       ),
     );

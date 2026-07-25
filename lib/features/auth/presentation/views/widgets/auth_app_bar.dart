@@ -8,7 +8,7 @@ class AuthAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      leadingWidth: 79,
+      leadingWidth: 100,
       leading: InkWell(
         onTap: () => Navigator.pop(context),
         child: Row(
